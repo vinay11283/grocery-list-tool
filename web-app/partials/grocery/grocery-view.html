@@ -1,0 +1,18 @@
+<table class="table groceryTable">
+    <tr>
+        <td>
+            <h3>Details for {{grocery.title}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>{{grocery.title}}</td>
+    </tr>
+    <tr>
+      <td>Notes</td>
+      <td>{{grocery.notes}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editGrocery({id:grocery._id})">Edit</a>
+</div>

@@ -1,0 +1,25 @@
+<a ui-sref="newGrocery" class="btn-primary btn-lg nodecoration">Add New Grocery Item</a>
+<h3>Grocery List</h3>
+<table class="table groceryTable">
+    <tr>
+      <th>Completed</th>
+      <th>Title</th>
+      <th>Action</th>
+    </tr>
+    <tr ng-repeat="grocery in groceries">
+        <td width="10%"><input id="completed_indicator" ng-model="grocery.completed_indicator" ng-click="toggleCompletion(grocery)" type="checkbox" /></td>
+        <td ng-if="grocery.completed_indicator" style="text-decoration: line-through;" width="50%">{{grocery.title}}</td>
+        <td ng-if="!grocery.completed_indicator" width="50%">{{grocery.title}}</td>
+        <td width="40%">
+            <a class="btn btn-primary" ui-sref="viewGrocery({id:grocery._id})">View</a>
+            <a class="btn btn-danger" ng-click="deleteGrocery(grocery)">Delete</a>
+        </td>
+    </tr>
+
+    <tr ng-if="!groceries.length" >
+        <td width="10%"></td>
+        <td width="50%">No items in the list.</td>
+        <td width="40%"></td>
+    </tr>
+
+</table>

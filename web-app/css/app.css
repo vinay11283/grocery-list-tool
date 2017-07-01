@@ -1,0 +1,20 @@
+body, html{
+  background: #fff;
+}
+.top-buffer {
+    margin-top: 10px;
+}
+.groceryTable tr td:nth-child(2) {
+    width: 150px;
+}
+.groceryTable tr:nth-child(1) td {
+    border-top: none;
+}
+a.nodecoration {
+    text-decoration: none;
+}
+
+.form-group.required .form-group.control-label:after {
+   content:"*";
+   color:red;
+}
