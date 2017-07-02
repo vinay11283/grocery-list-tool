@@ -13,6 +13,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing & Deployment
 
+Run MongoDB server
+* Go to the MongoDB install/bin directory and start mongod.exe
+
+
+Deploying RESTful api
+1. cd grocery-list-tool\service
+2. npm install
+3. node app.js
+
+Deploying web application
+1. cd grocery-list-tool\web-app
+2. npm install
+3. grunt serve
+4. Open browser and hit http://localhost:9000/index.html
 
 
 
